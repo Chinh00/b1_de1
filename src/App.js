@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './templates/header';
+import { Navbar } from './templates/navbar';
+import { Banner } from './templates/banner';
+import { MidNav } from './templates/midnavbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ width: "100%" }}>
+      <Header />
+      <div style={{ background: "#0C2883" }}>
+        <Navbar />
+        <Banner />
+      </div>
+      <MidNav />
     </div>
   );
 }
